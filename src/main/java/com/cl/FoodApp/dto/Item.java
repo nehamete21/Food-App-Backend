@@ -23,9 +23,9 @@ public class Item {
 	int quantity;
 	int price;
 	
-//	@ManyToOne(cascade = {CascadeType.ALL})
-//	@JoinColumn
-//	Menu menu;
+	@ManyToOne(cascade = {CascadeType.ALL})
+	@JoinColumn
+	Menu menu;
 
 	public int getId() {
 		return Id;

@@ -14,11 +14,14 @@ import javax.persistence.OneToMany;
 public class Menu {
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-  int id;
+   int id;
+//   String name;
+//   String foods;
+//   
 	
   // there items are existing item from database
-  @OneToMany(cascade = {CascadeType.ALL})
-  List<Item> items;
+//  @OneToMany(cascade = {CascadeType.ALL})
+//  List<Item> items;
 
 //  @ManyToOne(cascade = {CascadeType.ALL})
 //  BranchManager branchManager;
@@ -34,13 +37,13 @@ public void setId(int id) {
 	this.id = id;
 }
 
-public List<Item> getItems() {
-	return items;
-}
-
-public void setItems(List<Item> items) {
-	this.items = items;
-}
+//public List<Item> getItems() {
+//	return items;
+//}
+//
+//public void setItems(List<Item> items) {
+//	this.items = items;
+//}
 
 //public BranchManager getBranchManager() {
 //	return branchManager;
